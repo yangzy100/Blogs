@@ -178,8 +178,10 @@ print(p)</code></pre>
 <h3>Use geom_pointrange</h3>
 <pre class="r"><code>ggplot(df2, aes(x=dose, y=len, group=supp, color=supp)) + 
 geom_pointrange(aes(ymin=len-sd, ymax=len+sd))</code></pre>
-<p><img src="/2021/09/22/plot-with-error-bar/index_files/figure-html/Line%20plot%202-1.png" width="672" />
-### Use geom_line()+geom_pointrange()</p>
+<p><img src="/2021/09/22/plot-with-error-bar/index_files/figure-html/Line%20plot%202-1.png" width="672" /></p>
+</div>
+<div id="use-geom_linegeom_pointrange" class="section level3">
+<h3>Use geom_line()+geom_pointrange()</h3>
 <pre class="r"><code>ggplot(df2, aes(x=dose, y=len, group=supp, color=supp)) + 
   geom_line()+
   geom_pointrange(aes(ymin=len-sd, ymax=len+sd))</code></pre>
@@ -190,15 +192,21 @@ geom_pointrange(aes(ymin=len-sd, ymax=len+sd))</code></pre>
 <h2>3) Dot plot with mean point and error bars</h2>
 <p>The functions geom_dotplot() and stat_summary() are used :</p>
 <p>The mean +/- SD can be added as a crossbar, a error bar or a pointrange:</p>
+<div id="use-crossbar" class="section level3">
+<h3>use crossbar</h3>
 <pre class="r"><code>p &lt;- ggplot(df, aes(x=dose, y=len)) + 
     geom_dotplot(binaxis=&#39;y&#39;, stackdir=&#39;center&#39;)
-# use geom_crossbar()
+
 p + stat_summary(fun.data=&quot;mean_sdl&quot;, fun.args = list(mult=1), 
                  geom=&quot;crossbar&quot;, width=0.5) + theme_classic()</code></pre>
 <p><img src="/2021/09/22/plot-with-error-bar/index_files/figure-html/box_Plot1-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="use-errorbar" class="section level3">
+<h3>use errorbar</h3>
 <pre class="r"><code>p + stat_summary(fun.data=&quot;mean_sdl&quot;, fun.args = list(mult=1), 
                  geom=&quot;errorbar&quot;, width=0.5) + theme_classic()</code></pre>
 <p><img src="/2021/09/22/plot-with-error-bar/index_files/figure-html/box_Plot2-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
 </div>
 
     </div>

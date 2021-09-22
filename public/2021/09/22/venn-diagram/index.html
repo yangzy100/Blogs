@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.88.1" />
+
+
+<title>Venn Diagram - My Blogs website</title>
+<meta property="og:title" content="Venn Diagram - My Blogs website">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/yangzy100">GitHub</a></li>
+    
+    <li><a href="https://www.linkedin.com/in/yangzy100/">Linkedin</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Venn Diagram</h1>
+
+    
+    <span class="article-date">2021-09-22</span>
+    
+
+    <div class="article-content">
+      
+<script src="/2021/09/22/venn-diagram/index_files/header-attrs/header-attrs.js"></script>
+
+
+<p>Venn Diagram can be created by various Packages:
+ggven, ggVennDiagram, RAM, and VennDiagram</p>
+<div id="generate-data" class="section level2">
+<h2>Generate Data</h2>
+<pre class="r"><code># Generate 3 sets of 200 words
+set1 &lt;- paste(rep(&quot;word_&quot; , 200) , sample(c(1:1000) , 200 , replace=F) , sep=&quot;&quot;)
+set2 &lt;- paste(rep(&quot;word_&quot; , 200) , sample(c(1:1000) , 200 , replace=F) , sep=&quot;&quot;)
+set3 &lt;- paste(rep(&quot;word_&quot; , 200) , sample(c(1:1000) , 200 , replace=F) , sep=&quot;&quot;)
+
+# List of items
+x &lt;- list(A=set1, B=set2)
+
+# List of items
+y &lt;- list(A=set1, B=set2, C=set3)
+names(y)</code></pre>
+<pre><code>## [1] &quot;A&quot; &quot;B&quot; &quot;C&quot;</code></pre>
+</div>
+<div id="create-venn-diagrams-using-the-ggven-r-package" class="section level2">
+<h2>Create Venn diagrams using the ggven R package</h2>
+<div id="d-venn-diagram" class="section level3">
+<h3>2D Venn diagram</h3>
+<pre class="r"><code>library(&quot;ggvenn&quot;)
+
+ggvenn(y, columns = c(&quot;A&quot;, &quot;B&quot;),stroke_size = 0.5)</code></pre>
+<p><img src="/2021/09/22/venn-diagram/index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
+<div id="d-venn-diagram-1" class="section level3">
+<h3>3D Venn diagram</h3>
+<p><img src="/2021/09/22/venn-diagram/index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

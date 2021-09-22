@@ -28,16 +28,5 @@ geom_errorbar(),geom_linerange(),geom_pointrange(),geom_crossbar(),geom_erro
 Generate Data# Generate 3 sets of 200 wordsset1 &amp;lt;- paste(rep(&amp;quot;word_&amp;quot; , 200) , sample(c(1:1000) , 200 , replace=F) , sep=&amp;quot;&amp;quot;)set2 &amp;lt;- paste(rep(&amp;quot;word_&amp;quot; , 200) , sample(c(1:1000) , 200 , replace=F) , sep=&amp;quot;&amp;quot;)set3 &amp;lt;- paste(rep(&amp;quot;word_&amp;quot; , 200) , sample(c(1:1000) , 200 , replace=F) , sep=&amp;quot;&amp;quot;)# List of itemsx &amp;lt;- list(A=set1, B=set2)# List of itemsy &amp;lt;- list(A=set1, B=set2, C=set3)names(y)## [1] &amp;quot;A&amp;quot; &amp;quot;B&amp;quot; &amp;quot;C&amp;quot;1) Create Venn diagrams using the ggven R package2D Venn diagramlibrary(&amp;quot;ggvenn&amp;quot;)ggvenn(y, columns = c(&amp;quot;A&amp;quot;, &amp;quot;B&amp;quot;),stroke_size = 0.</description>
     </item>
     
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/2020-12-01-r-rmarkdown/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      
-      <guid>/2020-12-01-r-rmarkdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
-    </item>
-    
   </channel>
 </rss>

@@ -14,7 +14,7 @@
       
       <guid>/2021/09/22/venn-diagram/</guid>
       <description>Venn Diagram can be created by various Packages:ggven, ggVennDiagram, RAM, and VennDiagram
-Generate Data# Generate 3 sets of 200 wordsset1 &amp;lt;- paste(rep(&amp;quot;word_&amp;quot; , 200) , sample(c(1:1000) , 200 , replace=F) , sep=&amp;quot;&amp;quot;)set2 &amp;lt;- paste(rep(&amp;quot;word_&amp;quot; , 200) , sample(c(1:1000) , 200 , replace=F) , sep=&amp;quot;&amp;quot;)set3 &amp;lt;- paste(rep(&amp;quot;word_&amp;quot; , 200) , sample(c(1:1000) , 200 , replace=F) , sep=&amp;quot;&amp;quot;)# List of itemsx &amp;lt;- list(A=set1, B=set2)# List of itemsy &amp;lt;- list(A=set1, B=set2, C=set3)names(y)## [1] &amp;quot;A&amp;quot; &amp;quot;B&amp;quot; &amp;quot;C&amp;quot;Create Venn diagrams using the ggven R package2D Venn diagramlibrary(&amp;quot;ggvenn&amp;quot;)ggvenn(y, columns = c(&amp;quot;A&amp;quot;, &amp;quot;B&amp;quot;),stroke_size = 0.</description>
+Generate Data# Generate 3 sets of 200 wordsset1 &amp;lt;- paste(rep(&amp;quot;word_&amp;quot; , 200) , sample(c(1:1000) , 200 , replace=F) , sep=&amp;quot;&amp;quot;)set2 &amp;lt;- paste(rep(&amp;quot;word_&amp;quot; , 200) , sample(c(1:1000) , 200 , replace=F) , sep=&amp;quot;&amp;quot;)set3 &amp;lt;- paste(rep(&amp;quot;word_&amp;quot; , 200) , sample(c(1:1000) , 200 , replace=F) , sep=&amp;quot;&amp;quot;)# List of itemsx &amp;lt;- list(A=set1, B=set2)# List of itemsy &amp;lt;- list(A=set1, B=set2, C=set3)names(y)## [1] &amp;quot;A&amp;quot; &amp;quot;B&amp;quot; &amp;quot;C&amp;quot;1) Create Venn diagrams using the ggven R package2D Venn diagramlibrary(&amp;quot;ggvenn&amp;quot;)ggvenn(y, columns = c(&amp;quot;A&amp;quot;, &amp;quot;B&amp;quot;),stroke_size = 0.</description>
     </item>
     
     <item>
@@ -48,11 +48,11 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     </item>
     
     <item>
-      <title>More Projects</title>
-      <link>/2015/09/22/more-projects/</link>
-      <pubDate>Tue, 22 Sep 2015 13:09:13 -0600</pubDate>
+      <title>More will Come</title>
+      <link>/1/01/01/more-will-come/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2015/09/22/more-projects/</guid>
+      <guid>/1/01/01/more-will-come/</guid>
       <description>More Projects will be posted occasionally. Please come back later.
 Thank You !</description>
     </item>
